@@ -1,0 +1,12 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.licoreriaspondylus.www.twa",
+      "sha256_cert_fingerprints": [
+        "97:AF:B7:0F:1F:B4:EE:A5:0F:DE:A9:D3:5C:1E:F3:8D:83:C5:04:01:8D:2A:39:FE:A9:75:AC:55:FC:E6:54:1E"
+      ]
+    }
+  }
+]

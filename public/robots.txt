@@ -1,0 +1,8 @@
+User-agent: *
+disallow: /ordenes
+disallow: /account
+disallow: /cart
+disallow: /confirmarCompra
+disallow: /transferencia
+disallow: /terminosYCondiciones
+disallow: /transferencia

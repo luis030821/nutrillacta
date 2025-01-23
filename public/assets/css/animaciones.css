@@ -1,0 +1,121 @@
+:root {
+  --color: #fa6900;
+}
+
+.animacion-whastapp {
+  transition: all 2s;
+}
+.animacion-whastapp p {
+  right: 100%;
+  box-shadow: -3px 2px 6px rgba(0, 0, 0, 0.2);
+
+  animation: desaparecer-texto 2s ease forwards;
+  animation-delay: 5s;
+}
+::-webkit-scrollbar {
+  width: 10px; /* Ancho del scrollbar */
+  height: 4px; /* Alto del scrollbar */
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Color de fondo del track */
+  border-radius: 2px; /* Redondeo del track */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #001e42; /* Color del thumb */
+  border-radius: 3px; /* Redondeo del thumb */
+}
+
+
+/* .example { 
+  background-position: ;
+} */
+
+.inverse {
+  background-color: #0000009f;
+}
+
+.full-bleed {
+  box-shadow: 0 0 0 100vmax #0000009f;
+  clip-path: inset(0 -100vmax);
+  padding: 0.2rem 0 0.2rem 0;
+}
+
+.shadow--top {
+  box-shadow: -5px -5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.transition-hover {
+  transition: 0.3s background;
+}
+.Toastify__progress-bar--success {
+  background-color: var(--color);
+}
+.Toastify__toast-icon > svg {
+  fill: var(--color);
+}
+
+.anim-stroke-opacity {
+  transition: 0.2s color;
+}
+.anim-stroke-opacity {
+  transition: 0.2s stroke;
+}
+.anim-opacity-boton {
+  transition: 0.2s opacity;
+}
+
+.Toastify__progress-bar--default {
+  background-color: #ffcc00; /* Cambia este color al que desees */
+}
+
+.break-words-w { 
+  word-break: break-all;
+}
+
+.input-buscar-boton {
+  transition: 0.4s border;
+}
+
+.input-buscar-boton:focus-within {
+  border-color: #fa4b00;
+}
+
+
+.pigeon-attribution  {
+  display: none;
+}
+.input-form {
+  outline: 1px;
+  padding: 8px 16px;
+  border-radius: 10px;
+}
+
+.input-form::placeholder {
+  color: #626262;
+  height: 100v;
+}
+
+.input-placeholder-form::placeholder {
+  color: transparent;
+}
+
+.input-placeholder-form:focus-within::placeholder {
+  color: #626262ad;
+}
+input[type="checkbox"] {
+  accent-color: #fa4b00;
+}
+@keyframes desaparecer-texto {
+  0% {
+    opacity: 1;
+  }
+  70% {
+    opacity: 0;
+  }
+  100% {
+    right: -100%;
+    opacity: 0;
+  }
+}

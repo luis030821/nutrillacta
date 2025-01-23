@@ -1,0 +1,19 @@
+.tool-tip-head { 
+    position: relative;
+}
+
+
+.tool-tip-content { 
+    position: absolute;
+    bottom: 102%;
+    left: 0;
+    display: none;
+}
+
+.tool-tip-head:hover .tool-tip-content { 
+    display: block;
+}
+.input-buscar-boton > div  input:focus ~ .icon-wrapper> .svg-find {
+    stroke: #ff0000; /* Cambia este color por el que desees usar cuando el input esté enfocado */
+  }
+

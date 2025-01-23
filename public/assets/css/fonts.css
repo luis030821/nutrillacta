@@ -1,0 +1,60 @@
+/* @font-face {
+  font-family: "jakarta";
+  src: url("../fonts/plus-jakarta-sans-cyrillic-ext-400-normal.ttf");
+} */
+@font-face {
+  font-family: "jakarta";
+  src: url("../fonts/open-sans-cyrillic-300-normal.ttf");
+}
+
+@font-face {
+  font-family: "jakarta-titulos";
+  src: url("../fonts/plus-jakarta-sans-latin-700-normal.ttf");
+}
+
+@font-face {
+  font-family: "jakarta-delgado";
+  src: url("../fonts/open-sans-cyrillic-500-normal.ttf");
+}
+@font-face {
+  font-family: "jakarta-bold";
+  src: url("../fonts/plus-jakarta-sans-vietnamese-800-normal.ttf");
+}
+
+
+@font-face {
+  font-family: "normal";
+  src: url("../fonts/roboto-greek-400-normal.ttf");
+}
+
+
+
+
+body {
+  font-family: "normal", sans-serif;
+  font-weight: 400;
+}
+
+h1 {
+  font-family: "jakarta-titulos", sans-serif;
+}
+h2 {
+  font-family: "jakarta-delgado", sans-serif;
+  font-weight: 200;
+}
+
+.thin-texto {
+  font-family: "jakarta-delgado", sans-serif;
+  font-weight: 300;
+}
+
+.bold-texto {
+  font-family: "jakarta-bold", sans-serif;
+  font-weight: 900;
+}
+
+.normal-text { 
+  font-family: "normal";
+  font-weight: 400;
+}
+
