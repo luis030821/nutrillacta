@@ -13,7 +13,6 @@ import { order } from "@/interface";
 import VistaPreviaProductos from "./VistaPreviaProductos";
 import { getGreeting } from "./funciones";
 import Img from "@/components/img/Img";
-import useInventory from "@/context/inventory/useInventory";
 import QrGenerator from "@/components/QrGenerator";
 import client from "@/client";
 
@@ -23,7 +22,6 @@ function CartPage() {
   const { shop } = useCart();
   const [productos, setproductos] = useState<any[]>();
   const [all, setall] = useState(0);
-  // const { inventory } = useInventory();
   useEffect(() => {
     const all = shop
       // ?.filter(

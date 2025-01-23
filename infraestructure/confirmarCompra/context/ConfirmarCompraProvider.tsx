@@ -1,15 +1,11 @@
 import { useOrders } from "@/backend/useOrders";
-
 import { useCart } from "@/context/CartContext";
 import { estimateShipingOrderReturn, User } from "@/interface";
 import { createProviderFn } from "@/services/contextFn";
 import { Product } from "@/services/url";
 import { useLocalStorage } from "@uidotdev/usehooks";
-
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
-
-import { useUser } from "@llampukaq/realm";
 import { useUserAddress } from "@/hooks/useAddressUser";
 import useInvoice from "./hooks/useInvoice";
 const useU = () => {
@@ -20,7 +16,6 @@ const useU = () => {
     paypal: "paypal",
     cash: "cash",
   };
-  const { createInvoice } = useInvoice();
   const [order, setOrder] = useLocalStorage<
     estimateShipingOrderReturn | undefined
   >("orderInfo1");
@@ -78,7 +73,7 @@ const useU = () => {
   };
   const { shop, setShop } = useCart();
   const { address } = useUserAddress();
-  const { user } = useUser<User>();
+
   const router = useRouter();
   const [products, setProduct] = useState<Product[]>();
   const all = shop
@@ -152,41 +147,6 @@ const useU = () => {
       });
     }
 
-    await createInvoice({
-      priceAll: Number(price),
-      client:
-        user?.email == undefined
-          ? {
-              cliente: user?.name ?? "Default",
-              telefono: user?.phone ?? "Default",
-              email: user?.email,
-              direccion:
-                address.find((x) => x.addressId == addressId)?.formatted ??
-                "Tumbaco",
-              addressId,
-            }
-          : "Final",
-      methodPayment,
-
-      invoice: [
-        ...shop.map((x) => {
-          const count = x.count;
-          const index = parseFloat(x.productId.charAt(x.productId.length - 1));
-          const id = x.productId.substring(0, x.productId.length - 1);
-          const product = productsa?.find((x: Product) => x.productId == id);
-          return {
-            id: x.productId,
-            count,
-            priceUnit: Number(product?.variants[index].price),
-          };
-        }),
-        addressId != "PICKUP" && {
-          id: "shipping",
-          count: 1,
-          priceUnit: Number(fee),
-        },
-      ],
-    });
     reset();
     router.push("/mispedidos");
     await fetch(

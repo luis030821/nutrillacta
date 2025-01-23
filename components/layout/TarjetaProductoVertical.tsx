@@ -8,8 +8,7 @@ import { Product, Variant, format } from "@/services/url";
 import MensajesRandomProducto from "./MensajesRandomProducto";
 import P from "../html/P";
 import SourceImg from "../img/SourceImg";
-import useInventory from "@/context/inventory/useInventory";
-import { inventory } from "@/context/inventory/InventoryProvider";
+
 export default function TarjetaProductoVertical({
   maxProduct = 99,
   categoriaSeleccionada,
@@ -70,19 +69,6 @@ const Tarjeta: React.FC<{
   showPopular?: boolean;
   index: any;
 }> = ({ product, index }) => {
-  const [existInventory, setExistInventory] = useState(true);
-  const [inventoryData, setInventoryData] = useState<inventory>();
-  const { inventory } = useInventory();
-  useEffect(() => {
-    const exist = inventory?.find(
-      (x) => x.productId == `${product.productId}${index}`
-    );
-    if (exist == undefined) {
-      setExistInventory(false);
-    } else {
-      setInventoryData(exist);
-    }
-  }, [inventory]);
   const { categories } = useData();
   const categoriaPertenece = `${format(
     categories.find((e) => e.categoryId == product?.categoryId)?.title

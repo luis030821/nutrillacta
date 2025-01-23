@@ -13,7 +13,6 @@ import { Icons as I, Icons } from "@llampukaq/icons";
 import { useRouter } from "next/router";
 import React, { useCallback, useEffect, useState } from "react";
 import { MemoizedIcon } from "../MemoizedIcons";
-import useInventory from "@/context/inventory/useInventory";
 import { BotonAgregarAlCarro } from "@/components/button/BotonAgregarAlCarro";
 
 export default function CuadradoDePrecioPc({
@@ -71,7 +70,6 @@ export default function CuadradoDePrecioPc({
       window.removeEventListener("scroll", handleScroll);
     };
   });
-  const { inventory } = useInventory();
   useEffect(() => {
     setdate(
       addRandomMinutesToCurrentTime(
