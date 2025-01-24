@@ -47,7 +47,7 @@ export default function Document() {
           content="width=device-width, initial-scale=1.0, maximum-scale=1.0  user-scalable=no"
         />
         <link rel="preconnect" href="https://wsrv.nl/" />
-        <link rel="icon" href="/logo.png" />
+        <link rel="icon" href="/icons/logo32.png" />
         <link rel="manifest" href="/manifest.json" />
 
         <script
