@@ -7,7 +7,7 @@ import React, {
   useState,
 } from "react";
 import { useOnClickOutside } from "usehooks-ts";
-import { Icons } from "@llampukaq/icons";
+import { Icons } from "@/icons";
 import Img from "../img/Img";
 export function useModal(initial: boolean = false) {
   const [modal, setModal] = useState<boolean>(initial);

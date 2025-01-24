@@ -2,7 +2,7 @@ import TarjetaProductoVertical from "@/components/layout/TarjetaProductoVertical
 import useMainContext from "@/context/useMainContext";
 import { useData } from "@/context/withContext";
 import { Category, Product, format } from "@/services/url";
-import { Icons as I } from "@llampukaq/icons";
+import { Icons as I } from "@/icons";
 
 import React, { useState, useEffect } from "react";
 

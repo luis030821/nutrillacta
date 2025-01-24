@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react";
 import { Variant } from "@/services/url";
 
 import { Product } from "@/services/url";
-import { Icons as I } from "@llampukaq/icons";
+import { Icons as I } from "@/icons";
 import Icons from "@/styles/Icons";
 
 interface BotonAgregarAlCarroProps {

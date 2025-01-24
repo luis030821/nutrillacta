@@ -1,4 +1,4 @@
-import { Icons } from "@llampukaq/icons";
+import { Icons } from "@/icons";
 import React, { useEffect, useRef, useState } from "react";
 import Modal, { useModal } from "../modal/Modal";
 import Mapa from "../map/Map";

@@ -3,7 +3,7 @@ import Modal, { useModal } from "@/components/modal/Modal";
 import { useCart } from "@/context/CartContext";
 import { useData } from "@/context/withContext";
 import { Product } from "@/services/url";
-import { Icons } from "@llampukaq/icons";
+import { Icons } from "@/icons";
 import { NextSeo } from "next-seo";
 import Link from "next/link";
 import React, { useEffect, useState } from "react";

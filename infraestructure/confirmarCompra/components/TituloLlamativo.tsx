@@ -1,5 +1,5 @@
 import { modal } from "@/components/modal/Modal";
-import { ICONS, Icons } from "@llampukaq/icons";
+import { ICONS, Icons } from "@/icons";
 import { ReactNode } from "react";
 
 export const TituloLlamativo = ({

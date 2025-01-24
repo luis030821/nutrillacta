@@ -1,7 +1,7 @@
 import React, { ReactNode, useRef, useState } from "react";
 
 import { CSSTransition } from "react-transition-group";
-import { Icons } from "@llampukaq/icons";
+import { Icons } from "@/icons";
 import { modal } from "../modal/Modal";
 
 import { useOnClickOutside } from "usehooks-ts";
@@ -56,7 +56,9 @@ function ModalDown({
                 </div>
               </div>
               {/* @ts-ignore */}
-              <div className="px-5 pb-3">{React.cloneElement(children, { modal })}</div>
+              <div className="px-5 pb-3">
+                {React.cloneElement(children, { modal })}
+              </div>
             </div>
           </CSSTransition>
         </div>

@@ -4,7 +4,7 @@ import ModalTrigger from "@/components/ModalTrigger";
 import QrGenerator from "@/components/QrGenerator";
 import { useData } from "@/context/withContext";
 import { Product } from "@/services/url";
-import { Icons } from "@llampukaq/icons";
+import { Icons } from "@/icons";
 import dayjs from "dayjs";
 
 function Orders() {

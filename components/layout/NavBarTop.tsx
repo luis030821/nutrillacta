@@ -1,7 +1,7 @@
 import { useCart } from "@/context/CartContext";
 
 import Icons from "@/styles/Icons";
-import { Icons as I } from "@llampukaq/icons";
+import { Icons as I } from "@/icons";
 import Link from "next/link";
 import React from "react";
 import Img from "../img/Img";

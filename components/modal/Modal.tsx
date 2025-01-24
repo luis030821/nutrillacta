@@ -7,7 +7,7 @@ import React, {
   useState,
 } from "react";
 import { useOnClickOutside } from "usehooks-ts";
-import { Icons } from "@llampukaq/icons";
+import { Icons } from "@/icons";
 // import useDetectBackNavigation from "@/hooks/useDetectBackNavigation";
 import Img from "../img/Img";
 import OldModal from "./OldModal";

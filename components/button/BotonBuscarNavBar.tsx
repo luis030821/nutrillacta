@@ -1,4 +1,4 @@
-import { Icons } from "@llampukaq/icons";
+import { Icons } from "@/icons";
 import React, { useState } from "react";
 import BotonBuscar from "./BotonBuscar";
 import { useData } from "@/context/withContext";
@@ -6,12 +6,11 @@ import { useData } from "@/context/withContext";
 export default function BotonBuscarNavBar() {
   const { products } = useData();
   const [isClick, setisClick] = useState(false);
-  
-  const handleClic = () => {
-    setisClick(!isClick)
-    setTimeout(() => {
-        document.getElementById("input-buscar")?.focus();
 
+  const handleClic = () => {
+    setisClick(!isClick);
+    setTimeout(() => {
+      document.getElementById("input-buscar")?.focus();
     }, 100);
   };
   return (

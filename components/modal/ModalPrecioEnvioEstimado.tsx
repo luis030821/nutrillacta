@@ -1,5 +1,5 @@
 import Mapa, { locale } from "@/components/map/Map";
-import { Icons } from "@llampukaq/icons";
+import { Icons } from "@/icons";
 import React, { useEffect, useState } from "react";
 import { modal } from "../modal/Modal";
 import { useAddressInfo } from "@/context/address/AddressContext";

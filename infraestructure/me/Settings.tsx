@@ -7,7 +7,7 @@ import React, {
   useState,
 } from "react";
 import { useRouter } from "next/router";
-import { ICONS, Icons } from "@llampukaq/icons";
+import { ICONS, Icons } from "@/icons";
 const settingsContext = createContext({});
 const useSettingsContext = () => {
   return useContext(settingsContext) as {

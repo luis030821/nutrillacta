@@ -6,7 +6,7 @@ import "@/styles/tools.css";
 import type { AppProps } from "next/app";
 import MainContextComponent from "@/context/MainContext";
 import CartContext from "@/context/CartContext";
-import { IconsProvider } from "@llampukaq/icons";
+import { IconsProvider } from "@/icons";
 import Solved from "@/context/Solved";
 import { MessageProvider } from "@/context/message/MessageProvider";
 import NavBarTop from "@/components/layout/NavBarTop";

@@ -2,7 +2,7 @@ import Img from "@/components/img/Img";
 import useMensajeSimple from "@/components/mensajes/UseMensajeSimple";
 import Modal, { modal, useModal } from "@/components/modal/Modal";
 import useMessage from "@/context/message/useMessage";
-import { Icons } from "@llampukaq/icons";
+import { Icons } from "@/icons";
 import React, { useState } from "react";
 
 interface BankData {

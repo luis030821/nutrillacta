@@ -9,7 +9,7 @@ import Button from "@/components/button/Button";
 import useMessage from "@/context/message/useMessage";
 import { useCart } from "@/context/CartContext";
 import { useRouter } from "next/router";
-import { Icons } from "@llampukaq/icons";
+import { Icons } from "@/icons";
 import Mapa, { locale, MapPrint } from "@/components/map/Map";
 import ModalTrigger from "@/components/ModalTrigger";
 import { modal } from "@/components/modal/OldModal";

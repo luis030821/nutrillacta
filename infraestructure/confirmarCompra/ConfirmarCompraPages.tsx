@@ -1,6 +1,6 @@
 import Modal, { useModal } from "@/components/modal/Modal";
 import useMessage from "@/context/message/useMessage";
-import { Icons } from "@llampukaq/icons";
+import { Icons } from "@/icons";
 import { NextSeo } from "next-seo";
 import { useRouter } from "next/router";
 import React, { useEffect } from "react";

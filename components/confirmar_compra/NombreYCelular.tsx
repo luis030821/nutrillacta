@@ -1,5 +1,5 @@
 import Icons from "@/styles/Icons";
-import { Icons as I } from "@llampukaq/icons";
+import { Icons as I } from "@/icons";
 import { kMaxLength } from "buffer";
 import React, { useEffect, useState } from "react";
 import { useForm } from "react-hook-form";

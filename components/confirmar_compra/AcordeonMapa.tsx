@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { DirrecionMapa } from "./MapaForm";
-import { Icons } from "@llampukaq/icons";
+import { Icons } from "@/icons";
 import Modal, { useModal } from "../modal/Modal";
 import { ModalAddDirection } from "@/infraestructure/me/MePages/Dirrection";
 import PickUpBoton from "./PickUpBoton";

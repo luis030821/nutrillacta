@@ -1,4 +1,4 @@
-import { Icons } from "@llampukaq/icons";
+import { Icons } from "@/icons";
 import React, { useState, useEffect } from "react";
 
 const DeliveryTime = () => {
@@ -41,9 +41,7 @@ const DeliveryTime = () => {
           <div className="flex items-center">
             {/* <span className="shrink-0">🏍️💨</span> */}
             {updating ? (
-              <p className=" text-gray-500 w-full">
-                Actualizando oferta...
-              </p>
+              <p className=" text-gray-500 w-full">Actualizando oferta...</p>
             ) : (
               <p className=" text-gray-500 w-full">
                 Si ordenas ahora el pedido llegara hoy día a las {deliveryTime}

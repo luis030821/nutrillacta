@@ -1,4 +1,4 @@
-import { Icons } from "@llampukaq/icons";
+import { Icons } from "@/icons";
 import React, { useState, useEffect } from "react";
 
 export default function AvisoUsarMobile() {

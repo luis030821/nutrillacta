@@ -1,5 +1,5 @@
 import client from "@/client";
-import { Icons } from "@llampukaq/icons";
+import { Icons } from "@/icons";
 import React from "react";
 
 export default function WhatsappButtonPc() {

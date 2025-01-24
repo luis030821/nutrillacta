@@ -3,7 +3,7 @@ import { useIsLogin } from "@llampukaq/realm";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import React, { useEffect, useState } from "react";
-import { Icons as I, Icons, ICONS } from "@llampukaq/icons";
+import { Icons as I, Icons, ICONS } from "@/icons";
 import { getGreeting } from "@/infraestructure/cart/funciones";
 import { useOrders } from "@/backend/useOrders";
 import client from "@/client";
@@ -13,7 +13,6 @@ function Navbar() {
   const orders = useOrders();
 
   const [rutaDelUsuario, setrutaDelUsuario] = useState("");
-  const { isLogin } = useIsLogin();
   useEffect(() => {
     setrutaDelUsuario(router.pathname);
   }, [router.pathname]);

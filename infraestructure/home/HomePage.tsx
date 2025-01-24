@@ -2,7 +2,7 @@ import BotonBuscar from "@/components/button/BotonBuscar";
 import BotonDeMandaParaArriba from "@/components/button/BotonDeMandaParaArriba";
 import Banners from "@/components/layout/Banners";
 import { Category, format } from "@/services/url";
-import { Icons as I, Icons } from "@llampukaq/icons";
+import { Icons as I, Icons } from "@/icons";
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
 import CategoriasOrden from "./CategoriasOrden";

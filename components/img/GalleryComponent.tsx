@@ -5,7 +5,7 @@ import Modal, { useModal } from "../modal/Modal";
 import { TransformComponent, TransformWrapper } from "react-zoom-pan-pinch";
 import ImageZoom from "./ImageZoom";
 import Img from "./Img";
-import { Icons } from "@llampukaq/icons";
+import { Icons } from "@/icons";
 import useMainContext from "@/context/useMainContext";
 
 interface ImageProps {

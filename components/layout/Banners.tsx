@@ -2,7 +2,7 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 import React, { useState, useEffect, useRef } from "react";
 import Img from "../img/Img";
-import { Icons } from "@llampukaq/icons";
+import { Icons } from "@/icons";
 import useMainContext from "@/context/useMainContext";
 
 // Importa tus propios iconos o utiliza otra librería de iconos.

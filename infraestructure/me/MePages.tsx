@@ -2,7 +2,7 @@ import { User } from "@/interface";
 import { useUser } from "@llampukaq/realm";
 import React from "react";
 import { Settings, SettingsContainer, SettingsItem } from "./Settings";
-import { ICONS, Icons } from "@llampukaq/icons";
+import { ICONS, Icons } from "@/icons";
 import { useLogoutGoogle } from "@llampukaq/realm-google-provider";
 import Dirrection from "./MePages/Dirrection";
 import Button from "@/components/button/Button";

@@ -2,7 +2,7 @@ import client from "@/client";
 import { useCart } from "@/context/CartContext";
 import { useData } from "@/context/withContext";
 import { getGreeting } from "@/infraestructure/cart/funciones";
-import { Icons } from "@llampukaq/icons";
+import { Icons } from "@/icons";
 
 import React, { useEffect, useState } from "react";
 

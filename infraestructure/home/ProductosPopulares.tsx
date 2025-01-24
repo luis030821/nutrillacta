@@ -2,7 +2,7 @@ import TarjetaProductoVertical from "@/components/layout/TarjetaProductoVertical
 import useMainContext from "@/context/useMainContext";
 import { useData } from "@/context/withContext";
 import { Product, format } from "@/services/url";
-import { Icons } from "@llampukaq/icons";
+import { Icons } from "@/icons";
 import React, { useEffect, useState } from "react";
 
 export default function ProductosPopulares() {

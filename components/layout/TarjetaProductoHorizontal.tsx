@@ -4,7 +4,7 @@ import Link from "next/link";
 import { Category, Product, Variant, format } from "@/services/url";
 import { useData } from "@/context/withContext";
 import Img from "../img/Img";
-import { Icons as I, IconsProvider } from "@llampukaq/icons";
+import { Icons as I, IconsProvider } from "@/icons";
 import Icons from "@/styles/Icons";
 export default function TarjetaProductoHorizontal({
   product,
@@ -61,7 +61,9 @@ export default function TarjetaProductoHorizontal({
         </h1>
         {categoria && (
           <div className="flex items-center gap-2">
-            <p className="text-black/70 text-sm lg:text-[1.05rem] capitalize">{categoria}</p>
+            <p className="text-black/70 text-sm lg:text-[1.05rem] capitalize">
+              {categoria}
+            </p>
             <p className="px-2 py-0 text-[.8rem] lg:text-[1rem] text-gray-600 rounded-[7px] border border-gray-300">
               {product.name}
             </p>
@@ -75,11 +77,13 @@ export default function TarjetaProductoHorizontal({
           <div className="flex flex-col gap-1 items-start  justify-start h-full w-full mt-1 ">
             <div className="flex flex-col mb-1 h-full justify-start max-w-[220px]">
               {/* {product.variants.map((e, index) => ( */}
-                <div key={index} className="flex justify-between gap-2 ">
-                  <p className="font-medium lg:text-[1.3rem]">${Number(product.price).toFixed(2)}</p>
-                  <div className="border-t-[2px] my-auto border-dashed border-black/20  w-full  mt-[12px]"></div>
-                  {/* <p className="font-medium  text-black/60 lg:text-[1.1rem]">{product.name}</p> */}
-                </div>
+              <div key={index} className="flex justify-between gap-2 ">
+                <p className="font-medium lg:text-[1.3rem]">
+                  ${Number(product.price).toFixed(2)}
+                </p>
+                <div className="border-t-[2px] my-auto border-dashed border-black/20  w-full  mt-[12px]"></div>
+                {/* <p className="font-medium  text-black/60 lg:text-[1.1rem]">{product.name}</p> */}
+              </div>
               {/* ))} */}
             </div>
             <div className=" absolute  right-2 bottom-2">

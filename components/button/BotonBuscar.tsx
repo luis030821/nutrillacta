@@ -63,7 +63,7 @@ import { Product } from "@/services/url";
 import { ChangeEvent, useEffect, useRef } from "react";
 import Icons from "@/styles/Icons";
 import { useState } from "react";
-import { Icons as I } from "@llampukaq/icons";
+import { Icons as I } from "@/icons";
 import TarjetaProductoHorizontal from "../layout/TarjetaProductoHorizontal";
 import { Category, format } from "@/services/url";
 import Link from "next/link";

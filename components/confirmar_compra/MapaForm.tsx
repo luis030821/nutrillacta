@@ -1,7 +1,7 @@
 import Button from "@/components/button/Button";
 import useMessage from "@/context/message/useMessage";
 import useAddress from "@/hooks/useAddress";
-import { Icons } from "@llampukaq/icons";
+import { Icons } from "@/icons";
 import { nanoid } from "nanoid";
 import React, { useEffect, useState } from "react";
 import { useForm } from "react-hook-form";

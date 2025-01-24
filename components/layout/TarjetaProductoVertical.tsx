@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { BotonAgregarAlCarro } from "../button/BotonAgregarAlCarro";
 import { useData } from "@/context/withContext";
-import { Icons as I } from "@llampukaq/icons";
+import { Icons as I } from "@/icons";
 import Link from "next/link";
 import Img from "@/components/img/Img";
 import { Product, Variant, format } from "@/services/url";

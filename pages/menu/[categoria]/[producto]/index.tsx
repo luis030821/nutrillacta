@@ -7,7 +7,7 @@ import { useRouter } from "next/router";
 import React, { useEffect, useRef, useState } from "react";
 import { format } from "@/services/url";
 import Icons from "@/styles/Icons";
-import { Icons as I } from "@llampukaq/icons";
+import { Icons as I } from "@/icons";
 import Img from "@/components/img/Img";
 import {
   FacebookIcon,

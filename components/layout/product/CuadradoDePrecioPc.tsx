@@ -9,7 +9,7 @@ import useMessage from "@/context/message/useMessage";
 import useMainContext from "@/context/useMainContext";
 import { ModalAddDirection } from "@/infraestructure/me/MePages/Dirrection";
 import { Product, Variant } from "@/services/url";
-import { Icons as I, Icons } from "@llampukaq/icons";
+import { Icons as I, Icons } from "@/icons";
 import { useRouter } from "next/router";
 import React, { useCallback, useEffect, useState } from "react";
 import { MemoizedIcon } from "../MemoizedIcons";

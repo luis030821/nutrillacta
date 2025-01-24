@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import { Product } from "@/services/url";
 import Icons from "@/styles/Icons";
-import { Icons as I, IconsProvider } from "@llampukaq/icons";
+import { Icons as I, IconsProvider } from "@/icons";
 import P from "../html/P";
 
 function MensajesRandomProducto({

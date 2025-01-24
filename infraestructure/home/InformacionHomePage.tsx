@@ -1,5 +1,5 @@
 import React from "react";
-import { Icons as I, ICONS, Icons } from "@llampukaq/icons";
+import { Icons as I, ICONS, Icons } from "@/icons";
 import Link from "next/link";
 import Button from "@/components/button/Button";
 import Modal, { useModal } from "@/components/modal/Modal";

@@ -4,7 +4,7 @@ import { useCart } from "@/context/CartContext";
 import useMessage from "@/context/message/useMessage";
 import { useData } from "@/context/withContext";
 import { Address, User } from "@/interface";
-import { Icons } from "@llampukaq/icons";
+import { Icons } from "@/icons";
 import { useUser } from "@llampukaq/realm";
 import React, { useEffect, useState } from "react";
 import { useConfirmarCompra } from "../context/ConfirmarCompraProvider";

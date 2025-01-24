@@ -1,7 +1,7 @@
 import { ChangeEvent, useEffect } from "react";
 import Icons from "@/styles/Icons";
 import { useState } from "react";
-import { Icons as I } from "@llampukaq/icons";
+import { Icons as I } from "@/icons";
 import { BotonAgregarAlCarro } from "./BotonAgregarAlCarro";
 import TarjetaProductoHorizontal from "../layout/TarjetaProductoHorizontal";
 import { useData } from "@/context/withContext";

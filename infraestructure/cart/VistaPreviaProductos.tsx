@@ -3,7 +3,7 @@ import Link from "next/link";
 import React, { useEffect, useState } from "react";
 import { Category, Product, format } from "@/services/url";
 import Img from "@/components/img/Img";
-import { Icons } from "@llampukaq/icons";
+import { Icons } from "@/icons";
 
 export default function VistaPreviaProductos() {
   const [arr, setArr] = useState<Product[] | undefined>();

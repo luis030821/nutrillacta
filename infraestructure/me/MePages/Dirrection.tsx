@@ -5,7 +5,7 @@ import Modal, { modal, useModal } from "@/components/modal/Modal";
 import useAddress from "@/hooks/useAddress";
 import { useUserAddress } from "@/hooks/useAddressUser";
 import { Address } from "@/interface";
-import { Icons } from "@llampukaq/icons";
+import { Icons } from "@/icons";
 import React, { useState } from "react";
 import { useForm } from "react-hook-form";
 import CreateMeAddress from "./Dirrection/CreateMeAddress";

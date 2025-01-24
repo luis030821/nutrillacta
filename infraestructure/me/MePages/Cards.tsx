@@ -1,5 +1,5 @@
 import Modal, { useModal } from "@/components/modal/Modal";
-import { Icons } from "@llampukaq/icons";
+import { Icons } from "@/icons";
 import React, { useState } from "react";
 import useCards from "./hooks/useCards";
 import Link from "next/link";

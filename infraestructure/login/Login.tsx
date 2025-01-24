@@ -1,8 +1,8 @@
 import Modal, { useModal } from "@/components/modal/Modal";
 import Icons from "@/styles/Icons";
-import { Icons as I } from "@llampukaq/icons";
+import { Icons as I } from "@/icons";
 import { useIsLogin } from "@llampukaq/realm";
-// import { Icons } from "@llampukaq/icons";
+// import { Icons } from "@/icons";
 import {
   RealmFacebookButton,
   RealmGoogleButton,

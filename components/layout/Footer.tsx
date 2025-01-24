@@ -1,6 +1,6 @@
 import React from "react";
 import Img from "../img/Img";
-import { ICONS, Icons } from "@llampukaq/icons";
+import { ICONS, Icons } from "@/icons";
 import Link from "next/link";
 import useMainContext from "@/context/useMainContext";
 interface Social {

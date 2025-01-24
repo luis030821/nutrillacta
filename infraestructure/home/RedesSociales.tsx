@@ -1,6 +1,6 @@
-import { ICONS, Icons } from "@llampukaq/icons";
+import { ICONS, Icons } from "@/icons";
 import React from "react";
-import { Icons as I } from "@llampukaq/icons";
+import { Icons as I } from "@/icons";
 interface Social {
   titulo: string;
   link: string;
@@ -29,7 +29,10 @@ export default function RedesSociales() {
     <div className="flex flex-col border rounded-[10px] p-5">
       <I className="stroke-paleta-100" size={30} icon="IconSocial"></I>
       <h1 className="text-[1.2rem] font-bold">Redes sociales</h1>
-      <p>Recuerda seguirnos en todas nuestras redes para estar al tanto de nuestros avisos y promociones.</p>
+      <p>
+        Recuerda seguirnos en todas nuestras redes para estar al tanto de
+        nuestros avisos y promociones.
+      </p>
       <div className="flex justify-center items-center gap-12 mt-4">
         {datos.map((e) => (
           <a

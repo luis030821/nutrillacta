@@ -2,7 +2,7 @@ import { useAddressInfo } from "@/context/address/AddressContext";
 import React, { useEffect, useRef, useState } from "react";
 import { useOnClickOutside } from "usehooks-ts";
 import { PropLugarEstimado } from "../modal/ModalPrecioEnvioEstimado";
-import { Icons } from "@llampukaq/icons";
+import { Icons } from "@/icons";
 import Table from "../html/Table";
 import { useUserAddress } from "@/hooks/useAddressUser";
 export default function LugaresDelUsuarioYPredeterminados({
