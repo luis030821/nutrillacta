@@ -13,7 +13,6 @@ import { order } from "@/interface";
 import VistaPreviaProductos from "./VistaPreviaProductos";
 import { getGreeting } from "./funciones";
 import Img from "@/components/img/Img";
-import QrGenerator from "@/components/QrGenerator";
 import client from "@/client";
 
 function CartPage() {
@@ -126,7 +125,6 @@ function CartPage() {
                         Qr local
                         <Modal title="Qr" modal={modalQr}>
                           <div className="max-w-[400px] mx-auto">
-                            <QrGenerator value={JSON.stringify(shop)} />
                           </div>
                         </Modal>
                       </div>

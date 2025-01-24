@@ -57,6 +57,7 @@ function ModalDown({
               </div>
               {/* @ts-ignore */}
               <div className="px-5 pb-3">
+                {/* @ts-ignore */}
                 {React.cloneElement(children, { modal })}
               </div>
             </div>

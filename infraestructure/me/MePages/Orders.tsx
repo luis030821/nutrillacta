@@ -1,7 +1,6 @@
 import { useOrders } from "@/backend/useOrders";
 import Img from "@/components/img/Img";
 import ModalTrigger from "@/components/ModalTrigger";
-import QrGenerator from "@/components/QrGenerator";
 import { useData } from "@/context/withContext";
 import { Product } from "@/services/url";
 import { Icons } from "@/icons";
@@ -27,9 +26,7 @@ function Orders() {
                     trigger={
                       <Icons className="stroke-paleta-200" icon="IconQrcode" />
                     }
-                  >
-                    <QrGenerator value={order.orderId} />
-                  </ModalTrigger>
+                  ></ModalTrigger>
                 </div>
 
                 <div className="flex justify-between ">
