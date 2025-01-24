@@ -6,13 +6,10 @@ import "@/styles/tools.css";
 import type { AppProps } from "next/app";
 import MainContextComponent from "@/context/MainContext";
 import CartContext from "@/context/CartContext";
-
 import { IconsProvider } from "@llampukaq/icons";
 import Solved from "@/context/Solved";
 import { MessageProvider } from "@/context/message/MessageProvider";
-
 import NavBarTop from "@/components/layout/NavBarTop";
-
 import { ConfirmarCompraProvider } from "@/infraestructure/confirmarCompra/context/ConfirmarCompraProvider";
 export default function App({ Component, pageProps }: AppProps) {
   return (
