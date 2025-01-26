@@ -1,12 +1,6 @@
-import Link from "next/link";
 import { useRouter } from "next/router";
 import React, { useState, useEffect, useRef } from "react";
-import Img from "../img/Img";
 import { Icons } from "@/icons";
-import useMainContext from "@/context/useMainContext";
-
-// Importa tus propios iconos o utiliza otra librería de iconos.
-// Por ejemplo, aquí se usan iconos de Font Awesome.
 
 export interface Banner {
   img: string;
@@ -15,12 +9,18 @@ export interface Banner {
 }
 
 const Banners: React.FC = () => {
-  const banners: Banner[] = [
-    {
-      img: `https://nutrillacta.com/assets/favicon/android-icon-192x192.png"}`,
-      show: true,
-    },
-  ];
+  const [banners, setBanners] = useState([]);
+
+  useEffect(() => {
+    const res = async () => {
+      const result = await (
+        await fetch("https://nutrillacta.llampukaq.workers.dev/images")
+      ).json();
+
+      setBanners(result);
+    };
+    res();
+  }, []);
   const [currentBannerIndex, setCurrentBannerIndex] = useState<number>(0);
   const [containerWidth, setContainerWidth] = useState<number>(0);
   const containerRef = useRef<HTMLDivElement>(null);
@@ -36,7 +36,7 @@ const Banners: React.FC = () => {
 
   useEffect(() => {
     if (containerRef.current) {
-      setContainerWidth(containerRef.current.offsetWidth * banners.length);
+      setContainerWidth(containerRef.current.offsetWidth * banners?.length);
     }
     const pedienteIntervalor = () => {
       if (progressState <= 20) {
@@ -54,7 +54,7 @@ const Banners: React.FC = () => {
     const intervalId = setInterval(() => {
       if (!paused) {
         setCurrentBannerIndex((prevIndex) =>
-          prevIndex === banners.length - 1 ? 0 : prevIndex + 1
+          prevIndex === banners?.length - 1 ? 0 : prevIndex + 1
         );
         setprogress(100);
       }
@@ -139,23 +139,26 @@ const Banners: React.FC = () => {
       onTouchEnd={handleTouchEnd}
     >
       <div className="overflow-hidden rounded-[12px] border-[2px] border-black  relative flex w-full">
-        <div className="flex w-max gap-[0px] relative   " ref={containerRef}>
-          {banners.map((banner, index) => {
-            return (
-              <Img
-                link
-                width="1100"
-                key={index}
-                src={banner.img}
-                alt=""
-                className="w-full aspect-auto min-h-[150px] lg:w-full lg:min-h-[250px] lg:max-h-[250px] lg:min-w-[1200px] lg:max-w-[1200px]"
-              />
-            );
-          })}
+        <div className="flex w-max gap-[0px] relative" ref={containerRef}>
+          {banners != undefined && (
+            <>
+              {banners?.map((banner, index) => {
+                console.log(banner);
+                return (
+                  <img
+                    width="100"
+                    key={index}
+                    src={banner}
+                    className="object-center w-full aspect-auto min-h-[150px] lg:w-full lg:min-h-[250px] lg:max-h-[250px] lg:min-w-[1200px] lg:max-w-[1200px]"
+                  />
+                );
+              })}
+            </>
+          )}
         </div>
       </div>
       <div className="absolute top-[96%] left-0 right-0 flex justify-center gap-3">
-        {banners.map((_, ind) => (
+        {banners?.map((_, ind) => (
           <div
             key={ind}
             className={`w-3 h-3 rounded-full cursor-pointer ${
@@ -207,11 +210,6 @@ const Banners: React.FC = () => {
             />
           )}
         </div>
-        {/* <div className="relative -mt-3.5 w-0 h-0 border">
-          <div className="animate-spin">
-            <div className="absolute top-[-4px] left-[-4px] w-1 rounded-full border-2 h-1  border-paleta-100 bg-transparent"></div>
-          </div>
-        </div> */}
       </button>
     </div>
   );
