@@ -16,9 +16,14 @@ export const getStaticProps = async () => {
   const products = await url("products");
 
   const categories = await url("categories");
+  const result = await (
+    await fetch("https://nutrillacta.llampukaq.workers.dev/images")
+  ).json();
+
   const value = {
     products,
     categories,
+    images: result,
   };
   return { props: value };
 };

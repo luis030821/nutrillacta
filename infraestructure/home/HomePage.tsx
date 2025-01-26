@@ -8,7 +8,7 @@ import React, { useEffect, useState } from "react";
 import CategoriasOrden from "./CategoriasOrden";
 
 import useMainContext from "@/context/useMainContext";
-import Banners2 from "@/components/layout/Banner";
+
 import { useData } from "@/context/withContext";
 import HomePageSeo from "@/seo/HomePageSeo";
 import WhatsappButtonPc from "./WhatsappButtonPc";

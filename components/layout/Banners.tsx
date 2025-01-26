@@ -1,6 +1,8 @@
 import { useRouter } from "next/router";
 import React, { useState, useEffect, useRef } from "react";
 import { Icons } from "@/icons";
+import Img from "../img/Img";
+import { useData } from "@/context/withContext";
 
 export interface Banner {
   img: string;
@@ -9,18 +11,8 @@ export interface Banner {
 }
 
 const Banners: React.FC = () => {
-  const [banners, setBanners] = useState([]);
+  const { images: banners } = useData();
 
-  useEffect(() => {
-    const res = async () => {
-      const result = await (
-        await fetch("https://nutrillacta.llampukaq.workers.dev/images")
-      ).json();
-
-      setBanners(result);
-    };
-    res();
-  }, []);
   const [currentBannerIndex, setCurrentBannerIndex] = useState<number>(0);
   const [containerWidth, setContainerWidth] = useState<number>(0);
   const containerRef = useRef<HTMLDivElement>(null);
@@ -145,8 +137,9 @@ const Banners: React.FC = () => {
               {banners?.map((banner, index) => {
                 console.log(banner);
                 return (
-                  <img
-                    width="100"
+                  <Img
+                    link
+                    width="700"
                     key={index}
                     src={banner}
                     className="object-center w-full aspect-auto min-h-[150px] lg:w-full lg:min-h-[250px] lg:max-h-[250px] lg:min-w-[1200px] lg:max-w-[1200px]"

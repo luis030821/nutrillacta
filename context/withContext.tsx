@@ -7,7 +7,7 @@ export const useData = () => {
   return useContext(context) as {
     products: Product[];
     categories: Category[];
-    cards?: Cards[];
+    images: string[];
   };
 };
 export const withContext = (Component: any) => {
@@ -15,7 +15,7 @@ export const withContext = (Component: any) => {
     props: {
       categories: Category[];
       products: Product[];
-      cards?: Cards[];
+      images?: string[];
     } & { value: boolean }
   ) => {
     const { setProduct } = useConfirmarCompra();
